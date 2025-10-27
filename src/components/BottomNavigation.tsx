@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
-  { name: "Beranda", path: "/", icon: Home },
+  { name: "Home", path: "/", icon: Home },
   { name: "Projects", path: "/projects", icon: Briefcase },
   { name: "Certification", path: "/certifications", icon: Award },
   { name: "Blogs", path: "/blogs", icon: Newspaper },
