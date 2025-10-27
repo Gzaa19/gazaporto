@@ -102,7 +102,7 @@ const Projects = () => {
       image: "/placeholder.svg",
       technologies: ["React", "Node.js", "TypeScript", "Tailwind CSS"],
       githubUrl: "https://github.com/Gzaa19/Portofolio.git",
-      liveUrl: "https://portofolio-gzaa19.vercel.app/",
+      liveUrl: "https://gaza-portofolio.vercel.app/",
       featured: true
     },
   ];
