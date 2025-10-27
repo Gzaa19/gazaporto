@@ -1,4 +1,4 @@
-import { Home, Briefcase, Award, Share2, Moon, Sun } from "lucide-react";
+import { Home, Briefcase, Award, Share2, Newspaper, Moon, Sun } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
@@ -8,6 +8,7 @@ const menuItems = [
   { name: "Beranda", path: "/", icon: Home },
   { name: "Projects", path: "/projects", icon: Briefcase },
   { name: "Certification", path: "/certifications", icon: Award },
+  { name: "Blogs", path: "/blogs", icon: Newspaper },
   { name: "Social", path: "/social", icon: Share2 },
 ];
 
