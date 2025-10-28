@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { GlobalWorkerOptions, getDocument } from "pdfjs-dist";
-const CDN_WORKER_SRC =
-  "https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.296/build/pdf.worker.min.js";
 import { PageTransition } from "@/components/PageTransition";
 import { ExternalLink, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -62,10 +60,6 @@ const item = {
 
 const Certifications = () => {
   const [thumbs, setThumbs] = useState<Record<string, string>>({});
-
-  // Set worker untuk pdf.js dari CDN (menghindari bundling file besar ~1MB)
-  GlobalWorkerOptions.workerSrc = CDN_WORKER_SRC;
-
   useEffect(() => {
     let canceled = false;
     const loadThumbnails = async () => {
