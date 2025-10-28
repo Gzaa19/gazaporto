@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# Gazaporto — Portfolio
 
-## Project info
+Portfolio pribadi Gaza Al Ghozali Chansa. Dibangun dengan Vite + React + TypeScript + Tailwind CSS + shadcn/ui, dilengkapi animasi halus via Framer Motion dan routing dengan React Router.
 
-**URL**: https://lovable.dev/projects/38656a31-6d4d-4ed6-a288-54a2cb1b71a5
+## Fitur
 
-## How can I edit this code?
+- Halaman: `Home`, `Projects`, `Certifications`, `Blogs`, `Social`.
+- Sidebar untuk desktop dan Bottom Navigation untuk mobile.
+- Animasi transisi halaman dan komponen (`framer-motion`).
+- Toggle tema terang/gelap di navigasi bawah.
+- Komponen UI modern dari `shadcn/ui` dan ikon `lucide-react`.
+- Responsif dan mobile-first.
 
-There are several ways of editing your application.
+## Teknologi
 
-**Use Lovable**
+- Vite, React, TypeScript
+- Tailwind CSS, shadcn/ui
+- Framer Motion, React Router
+- TanStack Query (react-query)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/38656a31-6d4d-4ed6-a288-54a2cb1b71a5) and start prompting.
+## Prasyarat
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js v18+ dan npm
 
-**Use your preferred IDE**
+## Menjalankan Secara Lokal
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Aplikasi akan tersedia di `http://localhost:8081/` (sesuai konfigurasi Vite). Gunakan perangkat mobile atau devtools untuk melihat Bottom Navigation (`md:hidden`).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Build & Preview
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Scripts NPM
 
-## What technologies are used for this project?
+- `dev` — menjalankan server pengembangan Vite.
+- `build` — build produksi.
+- `preview` — menjalankan server preview hasil build.
+- `lint` — menjalankan ESLint.
 
-This project is built with:
+## Struktur Proyek
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+  components/       // Komponen UI (Sidebar, BottomNavigation, dll.)
+  pages/            // Halaman (Index, Projects, Certifications, Blogs, Social, Admin)
+  hooks/            // Hooks kustom
+  lib/              // Utilitas umum
+  main.tsx          // Entrypoint React
+```
 
-## How can I deploy this project?
+Alias path `@/*` dikonfigurasi di `tsconfig.json` untuk impor berbasis root.
 
-Simply open [Lovable](https://lovable.dev/projects/38656a31-6d4d-4ed6-a288-54a2cb1b71a5) and click on Share -> Publish.
+## Deployment
 
-## Can I connect a custom domain to my Lovable project?
+Proyek dapat dideploy ke platform seperti Vercel, Netlify, atau GitHub Pages.
+- Vercel: import repo, set framework = Vite, lalu deploy.
+- Netlify: build command `npm run build`, publish directory `dist`.
 
-Yes, you can!
+## Kredit
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Ikon oleh `lucide-react`. Komponen UI oleh `shadcn/ui`. Desain dan implementasi oleh Gaza Al Ghozali Chansa.
