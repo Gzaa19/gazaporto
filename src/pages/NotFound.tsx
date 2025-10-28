@@ -6,7 +6,6 @@ const NotFound = () => {
 
   useEffect(() => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
-    // Samakan title agar konsisten dengan halaman lain
     document.title = "Gzaa - Portfolio";
   }, [location.pathname]);
 
