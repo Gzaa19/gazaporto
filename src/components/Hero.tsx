@@ -12,7 +12,7 @@ export const Hero = () => {
     title: "Full Stack Developer || Software Engineer",
     description: "Create modern web applications and AI solutions that solve real-world problems. Passionate about clean code, and user experience.",
     avatar: "/hero.jpg",
-    resume: "/Curriculum Vitae Gaza Al Ghozali Chansa.pdf"
+    resume: "/CV - Gaza Al Ghozali Chansa.pdf"
   };
 
   return (
